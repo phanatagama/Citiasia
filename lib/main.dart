@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:lottie/lottie.dart';
 
-
 void main() {
   runApp(MyApp());
 }
@@ -37,42 +36,41 @@ class HomePage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            
             SizedBox(
               height: 32,
             ),
             Center(
-                child: Lottie.asset('assets/31548-robot-says-hello.json'),
+              child: Lottie.asset('assets/31548-robot-says-hello.json'),
             ),
-            Center(child: Text(
-              'Cahyadi Setia Phanatagama',
-              style: GoogleFonts.poppins(
-                color: Color(0xFF6495ED),
-                fontSize: 20,
-                fontWeight: FontWeight.w700,
+            Center(
+              child: Text(
+                'Cahyadi Setia Phanatagama',
+                style: GoogleFonts.poppins(
+                  color: Color(0xFF6495ED),
+                  fontSize: 20,
+                  fontWeight: FontWeight.w700,
+                ),
               ),
-            ),)
-            ,
+            ),
             SizedBox(
               height: 48,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-Image.asset(
-              'assets/unej.png',
-              width: 96,
-            ),
-            SizedBox(
-              width: 24,
-            ),
-            Image.asset(
-              'assets/citiasia-logo-2.png',
-              width: 96,
-            ),
+                Image.asset(
+                  'assets/unej.png',
+                  width: 96,
+                ),
+                SizedBox(
+                  width: 24,
+                ),
+                Image.asset(
+                  'assets/citiasia-logo-2.png',
+                  width: 96,
+                ),
               ],
             )
-            
           ],
         ),
       ),
